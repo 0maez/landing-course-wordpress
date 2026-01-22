@@ -1,0 +1,77 @@
+:root {
+  --yellow: #d1f055;
+  --pink: #9e24bc;
+  --dark: #3d3d3d;
+}
+
+
+.neo-highlight {
+  position: relative;
+  display: inline-flex;       
+  align-items: center;        
+  color: #3d3d3d;              
+  font-weight: 800;           
+  z-index: 1;
+}
+
+.neo-highlight::before {
+  content: "";
+  position: absolute;
+  top: 50%;                    
+  left: -0.2em;               
+  right: -0.2em;
+  height: 0.9em;            
+  background-color: #d1f055;  
+  border-radius: 999px;
+  z-index: -1;
+  transform: translateY(-50%); 
+}
+
+
+.neo-btn {
+  box-shadow: 6px 6px 0 var(--pink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--pink);
+}
+
+.neo-image-bg {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--pink);
+  border-radius: 0.75rem;
+}
+
+.neo-image img {
+  transform: rotate(-3deg); 
+  transition: transform 0.2s ease; 
+}
+
+/* Estrellas decorativas */
+.star {
+  position: absolute;
+  background-color: var(--pink);
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  ); 
+  opacity: 0.2;
+  transform: rotate(calc(var(--rotate, 0deg)));
+}
+
+.star {
+  animation: floatStars 10s ease-in-out infinite alternate;
+}
+
+@keyframes floatStars {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(10deg); }
+  100% { transform: translateY(0) rotate(-5deg); }
+}
