@@ -6,6 +6,7 @@
   <title>Build Your First WordPress Website</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo-1.png">
 </head>
 <body class="font-sans bg-gray-50 text-gray-900">
 
@@ -29,7 +30,7 @@
     <nav class="hidden md:flex items-center space-x-6">
       <a href="#target" class="text-white hover:text-[#d1f055]">Who is this for</a>
       <a href="#modules" class="text-white hover:text-[#d1f055]">Course content</a>
-      <a href="#contact" class="inline-flex items-center justify-center bg-[#d1f055] text-[#3d3d3d] font-bold px-4 py-1.5 border-2 border-[#3d3d3d] rounded-lg neo-btn leading-none"> Enroll now</a>
+      <a href="#contact" class="inline-flex items-center justify-center bg-[#d1f055] text-[#3d3d3d] font-bold px-4 py-1.5 rounded-lg neo-btn leading-none"> Enroll now</a>
     </nav>
 
     <!-- Mobile button -->
@@ -58,6 +59,8 @@
   </div>
 </div>
 
+<!-- END HEADER -->
+
 <!-- HERO -->
 <section
   id="hero"
@@ -66,7 +69,6 @@
   <div
     class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 px-6"
   >
-    <!-- LEFT TEXT -->
     <div class="md:w-1/2 space-y-8">
       <h1 class="text-4xl md:text-5xl font-extrabold leading-[1.4]">
         Build your 
@@ -81,13 +83,12 @@
 
       <a
         href="#contact"
-        class="inline-block bg-[#d1f055] text-[#3d3d3d] font-bold px-6 py-3 border-4 border-[#3d3d3d] rounded-lg neo-btn"
+        class="inline-block bg-[#d1f055] text-[#3d3d3d] font-bold px-6 py-3 rounded-lg neo-btn"
       >
         Start building now
       </a>
     </div>
 
-    <!-- RIGHT IMAGE -->
 <div class="md:w-1/2 flex justify-center">
   <div class="relative inline-block neo-image">
     <div class="neo-image-bg "></div>
@@ -99,41 +100,39 @@
   </div>
 </div>
 </section>
-
+<!-- HERO -->
 
 
 <!-- WHO IS THIS COURSE FOR -->
 <section id="who" class="py-16 bg-white relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 text-center space-y-12 relative z-10">
-    <!-- Heading con subrayado -->
     <h2 class="text-3xl md:text-4xl font-bold">
       <span class="neo-highlight">Who is this course for?</span>
     </h2>
-    <p class="text-gray-600 text-lg">Perfect for beginners who want to create their first WordPress website.</p>
+    <p class="text-[3d3d3d] text-lg">Perfect for beginners who want to create their first WordPress website.</p>
 
-    <!-- Cards -->
-    <div class="grid md:grid-cols-3 gap-6 mt-12">
-      <!-- Entrepreneur -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow relative">
-        <h3 class="text-xl font-bold mb-2">Entrepreneurs</h3>
-        <p class="text-gray-700">Launch your business website quickly, build credibility online, and showcase your products or services.</p>
-      </div>
-
-      <!-- Freelancer -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow relative">
-        <h3 class="text-xl font-bold mb-2">Freelancers</h3>
-        <p class="text-gray-700">Create a professional portfolio to attract clients and display your skills effectively.</p>
-      </div>
-
-      <!-- Business Owner -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow relative">
-        <h3 class="text-xl font-bold mb-2">Business Owners</h3>
-        <p class="text-gray-700">Easily manage your company’s online presence with a WordPress site that grows with your business.</p>
-      </div>
-    </div>
+<div class="grid md:grid-cols-3 gap-6 mt-12">
+  <!-- Entrepreneur -->
+  <div class="card-neo bg-[#3d3d3d] relative p-6 rounded-xl shadow-lg hover:translate-x-2 hover:-translate-y-2 transition-transform">
+    <h3 class="text-xl font-bold mb-2 neo-highlight">Entrepreneurs</h3>
+    <p class="text-white">Launch your business website quickly, build credibility online, and showcase your products or services.</p>
   </div>
 
-  <!-- Estrellas decorativas detrás de los cards -->
+  <!-- Freelancer -->
+  <div class="card-neo bg-[#3d3d3d] relative p-6 rounded-xl shadow-lg hover:translate-x-2 hover:-translate-y-2 transition-transform">
+    <h3 class="text-xl font-bold mb-2 neo-highlight">Freelancers</h3>
+    <p class="text-white">Create a professional portfolio to attract clients and display your skills effectively.</p>
+  </div>
+
+  <!-- Business Owner -->
+  <div class="card-neo bg-[#3d3d3d] relative p-6 rounded-xl shadow-lg hover:translate-x-2 hover:-translate-y-2 transition-transform">
+    <h3 class="text-xl font-bold mb-2 neo-highlight">Business Owners</h3>
+    <p class="text-white">Easily manage your company’s online presence with a WordPress site that grows with your business.</p>
+  </div>
+</div>
+
+
+  <!-- Estrellas -->
   <div class="absolute inset-0 z-0 pointer-events-none">
     <span class="star" style="top:10%; left:5%; width:30px; height:30px;"></span>
     <span class="star" style="top:40%; left:80%; width:50px; height:50px;"></span>
@@ -142,174 +141,412 @@
     <span class="star" style="top:60%; left:70%; width:35px; height:35px;"></span>
   </div>
 </section>
+<!-- END WHO IS THIS COURSE FOR -->
 
 
-  <!-- WHAT YOU WILL LEARN -->
-  <section id="modules" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 space-y-8">
-      <h2 class="text-3xl font-bold text-center">What you will learn</h2>
-      <p class="text-gray-600 text-center">Step by step modules to get your site live.</p>
-      <!-- Accordion placeholder -->
-      <div class="mt-8 space-y-4">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="font-semibold cursor-pointer">Module 1: Introduction to WordPress</h3>
-          <p class="mt-2 text-gray-600 hidden">Description for module 1 goes here.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="font-semibold cursor-pointer">Module 2: Domain & Hosting Setup</h3>
-          <p class="mt-2 text-gray-600 hidden">Description for module 2 goes here.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="font-semibold cursor-pointer">Module 3: Installing WordPress</h3>
-          <p class="mt-2 text-gray-600 hidden">Description for module 3 goes here.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="font-semibold cursor-pointer">Module 4: Themes & Customization</h3>
-          <p class="mt-2 text-gray-600 hidden">Description for module 4 goes here.</p>
+<!-- WHAT YOU WILL LEARN -->
+<section id="modules" class="py-20 bg-[var(--yellow)] relative overflow-hidden">
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <!-- Círculos -->
+    <span class="bg-circle" style="top:15%; left:8%; width:120px; height:120px;"></span>
+    <span class="bg-circle" style="bottom:20%; right:10%; width:80px; height:80px;"></span>
+    <span class="bg-circle" style="top:60%; left:20%; width:50px; height:50px;"></span>
+
+    <!-- Estrellas -->
+    <span class="star" style="top:25%; right:15%; width:50px; height:50px;"></span>
+    <span class="star" style="bottom:30%; left:65%; width:35px; height:35px;"></span>
+    <span class="star" style="top:70%; right:40%; width:30px; height:30px;"></span>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 space-y-12 z-10">
+
+<div class="relative mx-auto text-center w-fit">
+  <h2 class="text-3xl md:text-4xl font-bold inline-block relative z-10">
+    <span class="neo-highlight neo-highlight-gray text-white relative inline-block pr-20">
+      What you will learn
+
+      <img
+        src="images/shark.png"
+        alt="Character with books"
+        class="absolute right-[-3rem] top-[-1.2rem] w-28 z-20 pointer-events-none"
+      />
+    </span>
+  </h2>
+</div>
+    <p class="text-center text-gray-700 text-lg">
+      Step by step modules to get your site live.
+    </p>
+
+    <div class="space-y-6 mt-12 max-w-4xl mx-auto">
+      
+      <div class="module-neo p-8">
+        <button class="module-header">
+          Module 1: Introduction to WordPress
+        </button>
+
+        <div class="module-content">
+          <p>
+            Understand what WordPress is, how it works, and why it powers over 40% of the web.
+          </p>
+          <img src="images/module-1.jpg" alt="" />
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- HOW IT WORKS -->
-  <section id="how" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-6 space-y-8 text-center">
-      <h2 class="text-3xl font-bold">How it works</h2>
-      <p class="text-gray-600">Follow these 4 simple steps to get your website live.</p>
-      <div class="mt-8 flex flex-col md:flex-row justify-between gap-6">
-        <div class="bg-gray-100 p-6 rounded-lg shadow flex-1">
-          <h3 class="font-semibold text-xl">Step 1</h3>
-          <p>Enroll in the course</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow flex-1">
-          <h3 class="font-semibold text-xl">Step 2</h3>
-          <p>Access the lessons</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow flex-1">
-          <h3 class="font-semibold text-xl">Step 3</h3>
-          <p>Follow along and practice</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow flex-1">
-          <h3 class="font-semibold text-xl">Step 4</h3>
-          <p>Publish your website</p>
+      <div class="module-neo p-8">
+        <button class="module-header">
+          Module 2: Domain & Hosting Setup
+        </button>
+
+        <div class="module-content">
+          <p>
+            Learn how to choose a domain and set up reliable hosting step by step.
+          </p>
+          <img src="images/module-2.jpg" alt="" />
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- BENEFITS -->
-  <section id="benefits" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 space-y-8 text-center">
-      <h2 class="text-3xl font-bold">Why take this course?</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow">No coding required</div>
-        <div class="bg-white p-6 rounded-lg shadow">Lifetime access</div>
-        <div class="bg-white p-6 rounded-lg shadow">Practical, hands-on lessons</div>
-      </div>
-    </div>
-  </section>
+      <div class="module-neo p-8">
+        <button class="module-header">
+          Module 3: Installing WordPress
+        </button>
 
-  <!-- ABOUT THE INSTRUCTOR -->
-<section id="instructor" class="py-16 bg-white">
-  <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
-    <!-- Imagen -->
-    <div class="md:w-1/3">
-      <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">
-        Instructor Image
+        <div class="module-content">
+          <p>
+            Install WordPress safely and understand the admin dashboard.
+          </p>
+          <img src="images/module-3.jpg" alt="" />
+        </div>
       </div>
-    </div>
-    <!-- Texto -->
-    <div class="md:w-2/3 space-y-4">
-      <h2 class="text-3xl font-bold">About the Instructor</h2>
-      <p class="text-gray-700">
-        Hi! I'm [Your Name], a WordPress developer and educator. I've helped hundreds of beginners build their first websites and I'm excited to guide you step by step through this course.
-      </p>
-      <p class="text-gray-700">
-        With years of experience in web development and teaching, my goal is to make learning WordPress simple, fun, and practical.
-      </p>
+
+      <div class="module-neo p-8">
+        <button class="module-header">
+          Module 4: Themes & Customization
+        </button>
+
+        <div class="module-content">
+          <p>
+            Customize your site visually without breaking anything.
+          </p>
+          <img src="images/module-4.jpg" alt="" />
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+<!-- END WHAT YOU WILL LEARN -->
 
-  <!-- COUNTDOWN / LIMITED OFFER -->
-<section id="offer" class="py-16 bg-blue-50">
-  <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
-    <h2 class="text-3xl font-bold">Limited Time Offer!</h2>
-    <p class="text-gray-700 text-lg">
-      Get 50% off on the course. Offer ends in:
+
+<!-- HOW IT WORKS -->
+<section id="how" class="py-20 relative bg-[var(--dark)] text-white overflow-hidden">
+  <div class="absolute inset-0 bg-[url('images/fondo-1.png')] bg-cover opacity-[2%] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 space-y-12 text-center z-10">
+    <h2 class="text-3xl md:text-4xl font-bold inline-block relative z-10">
+      <span class="neo-highlight-pink">How it works</span>
+    </h2>
+    <p class="text-gray-300 text-lg">
+      Follow these 4 simple steps to get your website live.
     </p>
-    <!-- Countdown placeholder -->
-    <div id="countdown" class="text-4xl font-bold text-blue-600">
-      05:12:30
+
+    <!-- Steps -->
+    <div class="mt-12 flex flex-col md:flex-row justify-between gap-8 relative">
+      
+      <div class="step-neo bg-[var(--dark)] border-4 border-[var(--yellow)] rotate-[-2deg] p-6 rounded-xl shadow-lg flex-1 hover:rotate-0 transition-transform">
+        <h3 class="text-xl font-bold mb-2">Step 1</h3>
+        <p>Enroll in the course</p>
+        <div class="arrow hidden md:block absolute right-[-20px] top-1/2 text-2xl text-[var(--yellow)] translate-y-[-50%]">
+          🡆
+        </div>
+      </div>
+
+      <div class="step-neo bg-[var(--dark)] border-4 border-[var(--pink)] rotate-[2deg] p-6 rounded-xl shadow-lg flex-1 hover:rotate-0 transition-transform">
+        <h3 class="text-xl font-bold mb-2">Step 2</h3>
+        <p>Access the lessons</p>
+        <div class="arrow hidden md:block absolute right-[-20px] top-1/2 text-2xl text-[var(--pink)] translate-y-[-50%]">
+          🡆
+        </div>
+      </div>
+
+      <div class="step-neo bg-[var(--dark)] border-4 border-[var(--yellow)] rotate-[-2deg] p-6 rounded-xl shadow-lg flex-1 hover:rotate-0 transition-transform">
+        <h3 class="text-xl font-bold mb-2">Step 3</h3>
+        <p>Follow along and practice</p>
+        <div class="arrow hidden md:block absolute right-[-20px] top-1/2 text-2xl text-[var(--yellow)] translate-y-[-50%]">
+          🡆
+        </div>
+      </div>
+
+      <div class="step-neo bg-[var(--dark)] border-4 border-[var(--pink)] rotate-[2deg] p-6 rounded-xl shadow-lg flex-1 hover:rotate-0 transition-transform">
+        <h3 class="text-xl font-bold mb-2">Step 4</h3>
+        <p>Publish your website</p>
+      </div>
     </div>
-    <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition mt-4">
+  </div>
+</section>
+<!-- END HOW IT WORKS -->
+
+
+<!-- BENEFITS -->
+<section id="benefits" class="py-16 bg-white relative">
+  <div class="max-w-7xl mx-auto px-6 text-center space-y-10 relative z-20">
+    <h2 class="text-3xl font-bold">
+      <span class="text-[#3d3d3d] neo-highlight">Why take this course?</span>
+    </h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card-neo bg-[#3d3d3d] relative py-16 p-6 rounded-xl shadow-lg hover:translate-x-2 hover:-translate-y-2 transition-transform text-white">
+        <p>
+          <span class="text-lg">
+            No coding required
+          </span>
+        </p>
+      </div>
+      <div class="card-neo bg-[#3d3d3d] relative py-16 p-6 rounded-xl shadow-lg hover:translate-x-2 hover:-translate-y-2 transition-transform text-white">
+        <p>
+          <span class="text-lg">
+            Lifetime access
+          </span>
+        </p>
+      </div>
+      <div class="card-neo bg-[#3d3d3d] relative py-16 p-6 rounded-xl shadow-lg hover:translate-x-2 hover:-translate-y-2 transition-transform text-white">
+        <p>
+          <span class="text-lg">
+            Practical, hands-on lessons
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<img
+  src="images/dino.png"
+  alt="Decorative dinosaur"
+  class="absolute bottom-[-6rem] right-4 w-36 md:w-44 rotate-[-6deg] pointer-events-none z-20"
+/>
+
+<img
+  src="images/trice.png"
+  alt="Decorative dinosaur"
+  class="absolute bottom-[-6rem] left-4 w-36 md:w-44 rotate-[-6deg] pointer-events-none z-20"
+/>
+</section>
+<!-- END BENEFITS -->
+
+
+<!-- ABOUT THE INSTRUCTOR -->
+<section id="instructor" class="py-20 bg-white relative overflow-hidden">
+
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <span class="bg-circle deco" style="top:10%; left:8%; width:60px; height:60px;"></span>
+    <span class="bg-circle deco" style="top:65%; left:15%; width:40px; height:40px;"></span>
+
+    <span class="star deco" style="top:20%; right:10%; width:45px; height:45px;"></span>
+    <span class="star deco" style="bottom:15%; right:25%; width:30px; height:30px;"></span>
+  </div>
+
+  <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 relative z-10">
+
+    <div class="md:w-1/3 relative">
+      <div class="absolute inset-0 bg-[var(--pink)] rounded-xl translate-x-3 translate-y-3"></div>
+
+      <img
+        src="images/instructor.jpg"
+        alt="Instructor"
+        class="relative rounded-xl w-full object-cover"
+      />
+    </div>
+
+    <div class="md:w-2/3 space-y-6">
+
+      <div class="relative w-fit">
+        <h2 class="text-3xl md:text-4xl font-bold leading-tight relative">
+          <span class="neo-highlight neo-highlight-yellow inline-block">
+            About the
+          </span>
+          <br />
+          <span class="neo-highlight neo-highlight-pink inline-block ml-8 -rotate-2 text-white">
+            Instructor
+          </span>
+        </h2>
+      </div>
+
+      <div class="bg-[#3d3d3d] card-neo text-white p-6 rounded-xl shadow-lg rotate-[-1deg]">
+        <p>
+          Hi! I'm <strong>Clarisse</strong>, a WordPress developer and educator. I've helped hundreds of beginners build their first websites and I'm excited to guide you step by step through this course.
+        </p>
+
+        <p class="mt-4">
+          With years of experience in web development and teaching, my goal is to make learning WordPress simple, fun, and practical.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END ABOUT THE INSTRUCTOR -->
+
+
+<!-- COUNTDOWN / LIMITED OFFER -->
+<section id="offer" class="py-20 bg-[var(--yellow)] relative overflow-hidden">
+  <div class="max-w-3xl mx-auto px-6 text-center space-y-8 relative z-10">
+
+  <h2 class="text-3xl md:text-4xl font-bold">
+    <span class="neo-highlight neo-highlight-gray heading-tilt text-white">
+      Limited Time Offer!
+    </span>
+  </h2>
+
+
+    <p class="text-gray-700 text-lg">
+      Get <strong>50% off</strong> on the course. Offer ends in:
+    </p>
+
+    <div id="countdown" class="flex justify-center gap-4 mt-8">
+
+      <div class="count-box">
+        <span class="count-number" id="hours">05</span>
+        <span class="count-label">Hours</span>
+      </div>
+
+      <div class="count-box">
+        <span class="count-number" id="minutes">12</span>
+        <span class="count-label">Minutes</span>
+      </div>
+
+      <div class="count-box">
+        <span class="count-number" id="seconds">30</span>
+        <span class="count-label">Seconds</span>
+      </div>
+    </div>
+    
+    <a
+      href="#contact"
+      class="inline-block mt-10 bg-black text-white px-8 py-4 rounded-xl shadow-lg hover:translate-x-1 hover:-translate-y-1 transition-transform"
+    >
       Grab the Offer Now
     </a>
+
   </div>
 </section>
+<!-- END COUNTDOWN / LIMITED OFFER -->
 
-  <!-- CONTACT / ENROLL FORM -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="max-w-3xl mx-auto px-6 space-y-6 text-center">
-      <h2 class="text-3xl font-bold">Start building your website today!</h2>
-      <p class="text-gray-600">Enter your details and get instant access.</p>
-      <form class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg"/>
-        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg"/>
-        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">
-          Enroll Now
+
+<!-- CONTACT / FORM -->
+<section id="contact" class="py-28 bg-white relative overflow-hidden">
+
+  <div class="absolute inset-0 bg-[url('images/fondo-2.png')] bg-cover opacity-[2%] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 flex justify-center text-center">
+
+    <div class="relative bg-[var(--dark)] text-white rounded-2xl p-12 w-full max-w-xl neo-form-card">
+
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 rotate-[-1deg]">
+        <span class="neo-highlight">Enroll now</span>
+      </h2>
+
+      <p class="text-gray-300 mb-10 text-lg">
+        Join the course and start building your WordPress site today.
+      </p>
+
+      <form id="contact-form" class="space-y-8 text-left">
+        <div id="form-message" class="hidden mt-6 text-center font-bold text-lg"></div>
+
+        <div>
+          <label class="block mb-2 font-semibold text-sm text-gray-200">
+            Name
+          </label>
+          <input
+            type="text"
+            placeholder="Your name"
+            class="neo-input"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold text-sm text-gray-200">
+            Email
+          </label>
+          <input
+            type="email"
+            placeholder="you@email.com"
+            class="neo-input"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-2 font-semibold text-sm text-gray-200">
+            Your goal
+          </label>
+          <textarea
+            rows="4"
+            placeholder="Tell me your goal…"
+            class="neo-input resize-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="neo-btn bg-[var(--yellow)] text-[var(--dark)] font-extrabold px-10 py-4 rounded-xl mx-auto block text-lg"
+        >
+          Join the course
         </button>
       </form>
     </div>
-  </section>
+  </div>
+</section>
+<!-- END CONTACT / FORM -->
+
+
 
 <!-- FOOTER -->
-<footer class="bg-blue-600 text-white py-10">
+<footer class="bg-gray-900 text-white py-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Contenedor principal: flex para desktop, columna para móvil -->
+
     <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
       
-      <!-- Logo + texto -->
       <div class="text-center md:text-left space-y-2">
         <div class="flex justify-center md:justify-start items-center gap-3">
-          <!-- Logo SVG o placeholder -->
-          <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 0L15.09 8H24L17.45 12.91L20.54 20.91L12 16L3.46 20.91L6.55 12.91L0 8H8.91L12 0Z"/>
-          </svg>
+          <img
+            src="images/logo-1.png"
+            alt="WP From Scratch Logo"
+            class="w-10 h-10 object-contain"
+          />
           <span class="text-2xl font-bold">WP From Scratch</span>
         </div>
-        <p class="text-gray-200 text-sm">Build your first WordPress website with confidence</p>
+        <p class="text-gray-400 text-sm">
+          Build your first WordPress website with confidence
+        </p>
       </div>
 
-      <!-- Social icons -->
       <div class="flex justify-center md:justify-end gap-4">
-        <!-- Twitter -->
-        <a href="#" class="hover:text-gray-300 transition">
+        
+        <a href="#" class="hover:text-pink-400 transition">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
             <path d="M24 4.557a9.828 9.828 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.918 4.918 0 0 0-8.384 4.482A13.944 13.944 0 0 1 1.671 3.149a4.918 4.918 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.228-.616v.062a4.919 4.919 0 0 0 3.946 4.827 4.902 4.902 0 0 1-2.224.084 4.923 4.923 0 0 0 4.596 3.417A9.867 9.867 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646a9.935 9.935 0 0 0 2.457-2.549z"/>
           </svg>
         </a>
-        <!-- YouTube -->
-        <a href="#" class="hover:text-gray-300 transition">
+
+        <a href="#" class="hover:text-pink-400 transition">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
             <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
           </svg>
         </a>
-        <!-- Facebook -->
-        <a href="#" class="hover:text-gray-300 transition">
+
+        <a href="#" class="hover:text-pink-400 transition">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
             <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
           </svg>
         </a>
+
       </div>
     </div>
 
-    <!-- Copyright -->
-    <div class="mt-8 text-center text-gray-300 text-sm">
+    <div class="mt-8 text-center text-gray-500 text-sm">
       © 2026 WP From Scratch — All rights reserved.
     </div>
   </div>
 </footer>
+<!-- FOOTER -->
+
 
 <script src="js/main.js" defer></script>
 </body>
